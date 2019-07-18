@@ -15,7 +15,6 @@ app.use(contactRouter);
 app.use(adminRouter);
 
 app.get('*', (req, res) => {
-    console.log(req.url);
     res.sendFile(path.join(publicPath, '/index.html'));
 });
 
